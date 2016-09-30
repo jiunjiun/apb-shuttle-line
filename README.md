@@ -1,6 +1,10 @@
 # apb-shuttle-line
 
 #### 航警局車表
+Line bot：[@zum7374k](https://line.me/R/ti/p/%40zum7374k)
+
+![Line bot QRCode](http://qr-official.line.me/L/xZ5V13zidd.png)
+
 網址位置：[http://apb-shuttle.info](http://apb-shuttle.info)
 
 API Doc: [https://apb-shuttle.info/doc/api](https://apb-shuttle.info/doc/api)
