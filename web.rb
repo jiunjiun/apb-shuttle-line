@@ -175,7 +175,7 @@ def bus_card(bus)
   depart_note = bus['kind'] == 1 ? '✱局本部假日不開' : ''
 
   msg = "#{kind} - #{note}\n#{depart} #{special}"
-  msg += "\n#{depart_note}" if depart_note
+  msg += "\n#{depart_note}" if depart_note.size != 0
   msg
 end
 
