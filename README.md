@@ -1,5 +1,8 @@
 # apb-shuttle-line
 
+[![Code Climate](https://codeclimate.com/github/jiunjiun/apb-shuttle-line/badges/gpa.svg)](https://codeclimate.com/github/jiunjiun/apb-shuttle-line)
+[![security](https://hakiri.io/github/jiunjiun/apb-shuttle-line/master.svg)](https://hakiri.io/github/jiunjiun/apb-shuttle-line/master)
+
 #### 航警局車表
 Line bot：[@zum7374k](https://line.me/R/ti/p/%40zum7374k)
 
