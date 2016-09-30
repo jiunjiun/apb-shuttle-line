@@ -42,28 +42,28 @@ end
 
 def navigation
   message = {
-    "type": "template",
-    "altText": "this is a buttons template",
-    "template": {
-      "type": "buttons",
-      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-      "title": "Menu",
-      "text": "Please select",
-      "actions": [
+    type: "template",
+    altText: "this is a buttons template",
+    template: {
+      type: "buttons",
+      thumbnailImageUrl: "https://example.com/bot/images/image.jpg",
+      title: "Menu",
+      text: "Please select",
+      actions: [
           {
-            "type": "postback",
-            "label": "Buy",
-            "data": "action=buy&itemid=123"
+            type: "postback",
+            label: "Buy",
+            data: "action=buy&itemid=123"
           },
           {
-            "type": "postback",
-            "label": "Add to cart",
-            "data": "action=add&itemid=123"
+            type: "postback",
+            label: "Add to cart",
+            data: "action=add&itemid=123"
           },
           {
-            "type": "uri",
-            "label": "View detail",
-            "uri": "http://example.com/page/123"
+            type: "uri",
+            label: "View detail",
+            uri: "http://example.com/page/123"
           }
       ]
     }
@@ -81,33 +81,16 @@ def filter_message(text)
       type: 'text',
       text: msg
     }
-  when '下一班'
-    next_1 = ApbShuttleApi.next(1)
-    msg = bus_card(next_1['bus'])
-
-    message = {
-      type: 'text',
-      text: msg
+  when '下一班', '下兩班', '下三班', '下四班'
+    next_hash = {
+      '下一班': 1,
+      '下兩班': 2,
+      '下三班': 3,
+      '下四班': 4
     }
-  when '下兩班'
-    next_2 = ApbShuttleApi.next(2)
-    msg = bus_card(next_2['bus'])
 
-    message = {
-      type: 'text',
-      text: msg
-    }
-  when '下三班'
-    next_3 = ApbShuttleApi.next(3)
-    msg = bus_card(next_3['bus'])
-
-    message = {
-      type: 'text',
-      text: msg
-    }
-  when '下四班'
-    next_4 = ApbShuttleApi.next(4)
-    msg = bus_card(next_4['bus'])
+    next_station = ApbShuttleApi.next(next_hash[text])
+    msg = bus_card(next_station['bus'])
 
     message = {
       type: 'text',
