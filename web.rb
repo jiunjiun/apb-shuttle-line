@@ -156,7 +156,7 @@ def filter_message(text)
   else
     message = [{
         type: 'text',
-        text: "點擊「查看更多資訊」，或是輸入\n「最新班次」、「下一班」、「警備資訊」、「亞通資訊」\n就可以使用了哦"
+        text: "點擊「查看更多資訊」，或是輸入\n「最新班次」、「下一班」、「下兩班」、「警備資訊」、「亞通資訊」\n就可以使用了哦!"
       },
       {
         type: 'sticker',
@@ -175,7 +175,7 @@ def bus_card(bus)
   depart_note = bus['kind'] == 1 ? '✱局本部假日不開' : ''
 
   msg = "#{kind} - #{note}\n#{depart} #{special}"
-  msg += "#{msg}\n#{depart_note}" if depart_note
+  msg += "\n#{depart_note}" if depart_note
   msg
 end
 
