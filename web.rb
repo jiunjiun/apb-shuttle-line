@@ -89,7 +89,7 @@ def filter_message(text)
       '下四班': 4
     }
 
-    next_station = ApbShuttleApi.next(next_hash[text])
+    next_station = ApbShuttleApi.next(next_hash[:"#{text}"])
     msg = bus_card(next_station['bus'])
 
     message = {
