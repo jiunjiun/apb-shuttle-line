@@ -136,6 +136,17 @@ def filter_message(text)
         stickerId: '106',
       }
     ]
+  when /(航警局誰最帥)/
+    message = [{
+        type: 'text',
+        text: "當然是我們的鎮宇呀呀~"
+      },
+      {
+        type: 'sticker',
+        packageId: '1',
+        stickerId: '119',
+      }
+    ]
   else
     message = [{
         type: 'text',
