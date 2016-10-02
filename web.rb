@@ -137,9 +137,10 @@ def filter_message(text)
       }
     ]
   when /(航警局誰最帥)/
+    msgs = ['當然是我們的鎮宇呀呀~', '當然是帥氣的漢光光~']
     message = [{
         type: 'text',
-        text: "當然是我們的鎮宇呀呀~"
+        text: msgs.sample
       },
       {
         type: 'sticker',
