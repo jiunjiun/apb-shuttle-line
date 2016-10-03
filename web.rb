@@ -131,7 +131,7 @@ def filter_message(text)
         text: "如果你覺得這個服務很好，可以贊助我。\n如果有任何問題也可以聯絡我: quietmes@gamil.com"
       }, {
         type: 'text',
-        text: '贊助連結：https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NG7CYR4SWSAZ6'
+        text: '贊助連結：https://payment.allpay.com.tw/Broadcaster/Donate/CF42E5613420588969D8D61197608888'
       }
     ]
   when /^(help|HELP)/
