@@ -125,6 +125,32 @@ def filter_message(text)
         text: ref_link_msg
       }
     ]
+  when '捐款', '贊助'
+    messages = [{
+        type: 'text',
+        text: "如果你覺得這個服務很好，可以贊助我。\n如果有任何問題也可以聯絡我: quietmes@gamil.com"
+      }, {
+        type: 'text',
+        text: '贊助連結：https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NG7CYR4SWSAZ6'
+      }
+    ]
+  when /^(help|HELP)/
+    msg = "最新班次 - 查詢最新班次\n"
+    msg += "下一班 - 查詢下一班班次\n"
+    msg += "下兩班 - 查詢下兩班班次\n"
+    msg += "下三班 - 查詢下三班班次\n"
+    msg += "下四班 - 查詢下四班班次\n"
+    msg += "警備資訊 - 查詢警備資訊圖片\n"
+    msg += "亞通資訊 - 查詢亞通資訊連結、圖片\n"
+    msg += "捐款 - 如果你覺得這個服務，你可以贊助\n"
+    msg += "-\n"
+    msg += "v0.1.0 | 133T quietmes@gamil.com"
+
+    messages = [{
+        type: 'text',
+        text: msg
+      }
+    ]
   when '科科安'
     message = [{
         type: 'text',
@@ -136,7 +162,7 @@ def filter_message(text)
         stickerId: '106',
       }
     ]
-  when /(航警局誰最帥)/
+  when /^航警局誰最帥/
     msgs = ['當然是我們的鎮宇呀呀~', '當然是帥氣的漢光光~']
     message = [{
         type: 'text',
@@ -151,7 +177,7 @@ def filter_message(text)
   else
     message = [{
         type: 'text',
-        text: "點擊「查看更多資訊」，或是輸入\n「最新班次」、「下一班」、「下兩班」、「警備資訊」、「亞通資訊」\n就可以使用了哦!"
+        text: "點擊「查看更多資訊」，或是\n輸入「help」查詢使用方法。\n就可以使用了哦!"
       },
       {
         type: 'sticker',
