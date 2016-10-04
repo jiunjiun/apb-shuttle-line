@@ -125,10 +125,10 @@ def filter_message(text)
         text: ref_link_msg
       }
     ]
-  when '捐款', '贊助'
+  when '贊助', '捐款'
     messages = [{
         type: 'text',
-        text: "如果你覺得這個服務很好，可以贊助我。\n如果有任何問題也可以聯絡我: quietmes@gamil.com"
+        text: "如果你覺得這個服務很好，可以贊助我。\n如果你有任何想客製的功能、服務，歡迎到下面連結留言給我。"
       }, {
         type: 'text',
         text: '贊助連結：https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NG7CYR4SWSAZ6'
@@ -142,7 +142,7 @@ def filter_message(text)
     msg += "下四班 - 查詢下四班班次\n"
     msg += "警備資訊 - 查詢警備資訊圖片\n"
     msg += "亞通資訊 - 查詢亞通資訊連結、圖片\n"
-    msg += "捐款 - 如果你覺得這個服務，你可以贊助\n"
+    msg += "贊助 - 如果你覺得這個服務，你可以贊助\n"
     msg += "-\n"
     msg += "v0.1.0 | 133T quietmes@gamil.com"
 
