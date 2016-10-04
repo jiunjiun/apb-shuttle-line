@@ -131,7 +131,7 @@ def filter_message(text)
         text: "如果你覺得這個服務很好，可以贊助我。\n如果你有任何想客製的功能、服務，歡迎到下面連結留言給我。"
       }, {
         type: 'text',
-        text: '贊助連結：https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NG7CYR4SWSAZ6'
+        text: '贊助連結：https://payment.allpay.com.tw/Broadcaster/Donate/CF42E5613420588969D8D61197608888'
       }
     ]
   when /^(help|HELP)/
