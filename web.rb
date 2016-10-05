@@ -144,7 +144,7 @@ def filter_message(text)
     msg += "亞通資訊 - 查詢亞通資訊連結、圖片\n"
     msg += "贊助 - 如果你覺得這個服務，你可以贊助\n"
     msg += "-\n"
-    msg += "v0.1.0 | 133T quietmes@gamil.com"
+    msg += "v0.1.0 | 133T quietmes@gmail.com"
 
     messages = [{
         type: 'text',
